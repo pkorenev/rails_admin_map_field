@@ -3,7 +3,7 @@ module RailsAdmin::Config::Fields::Types
     RailsAdmin::Config::Fields::Types::register(:map, self)
 
     def allowed_methods
-      [@name, longitude_field]
+      [@name, longitude_field, :google_address]
     end
 
     # THe name of the corresponding longitude field to match the latitude field
